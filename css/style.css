@@ -10076,19 +10076,19 @@ footer .copy-end {
   content: "";
 }
 .about-page .breadcrumb a {
-  color: #f79119;
+  color: #646363;
 }
 .about-page .breadcrumb a:hover {
   text-decoration: underline;
 }
 .about-page .pan-icon {
   font-size: 3rem;
-  color: #808080;
+  color: #646363;
   margin: 0 -0.6rem;
 }
 .about-page .pan-title {
   font-size: 3rem;
-  color: #666;
+  color: #646363;
   margin-top: 0.2rem;
 }
 .about-page {
@@ -10519,19 +10519,19 @@ footer .copy-end {
   content: "";
 }
 .product-page .breadcrumb a {
-  color: #f79119;
+  color: #646363;
 }
 .product-page .breadcrumb a:hover {
   text-decoration: underline;
 }
 .product-page .pan-icon {
   font-size: 3rem;
-  color: #808080;
+  color: #646363;
   margin: 0 -0.6rem;
 }
 .product-page .pan-title {
   font-size: 3rem;
-  color: #666;
+  color: #646363;
   margin-top: 0.2rem;
 }
 .product-page {
