@@ -10054,6 +10054,57 @@ footer .copy-end {
   line-height: 1.7rem;
 }
 .about-page {
+  /* ===========================
+      パンくずリスト
+  =========================== */
+}
+.about-page .breadcrumb {
+  padding: 1rem 0;
+  font-size: 3rem;
+  margin: 2rem 0 -2rem 2rem;
+}
+.about-page .breadcrumb ul {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.about-page .breadcrumb ul li {
+  justify-content: center;
+  align-items: center;
+}
+.about-page .breadcrumb ul li:last-child::after {
+  content: "";
+}
+.about-page .breadcrumb a {
+  color: #f79119;
+}
+.about-page .breadcrumb a:hover {
+  text-decoration: underline;
+}
+.about-page .pan-icon {
+  font-size: 3rem;
+  color: #808080;
+  margin: 0 -0.6rem;
+}
+.about-page .pan-title {
+  font-size: 3rem;
+  color: #666;
+  margin-top: 0.2rem;
+}
+.about-page {
+  /* タブレット・PC用 */
+}
+@media (min-width: 768px) {
+  .about-page .pan-title {
+    margin-top: 0.1rem;
+    font-size: 1.5rem;
+  }
+  .about-page .breadcrumb,
+  .about-page .pan-icon {
+    font-size: 1.5rem;
+  }
+}
+.about-page {
   /*＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
   サブアバウト領域
   ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊*/
@@ -10443,6 +10494,57 @@ footer .copy-end {
   }
   .product-page .product-hero .product-hero-container p {
     font-size: clamp(1.2rem, 1.5vw, 1.7rem);
+  }
+}
+.product-page {
+  /* ===========================
+  	    パンくずリスト
+  	=========================== */
+}
+.product-page .breadcrumb {
+  padding: 1rem 0;
+  font-size: 3rem;
+  margin: 2rem 0 -2rem 2rem;
+}
+.product-page .breadcrumb ul {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.product-page .breadcrumb ul li {
+  justify-content: center;
+  align-items: center;
+}
+.product-page .breadcrumb ul li:last-child::after {
+  content: "";
+}
+.product-page .breadcrumb a {
+  color: #f79119;
+}
+.product-page .breadcrumb a:hover {
+  text-decoration: underline;
+}
+.product-page .pan-icon {
+  font-size: 3rem;
+  color: #808080;
+  margin: 0 -0.6rem;
+}
+.product-page .pan-title {
+  font-size: 3rem;
+  color: #666;
+  margin-top: 0.2rem;
+}
+.product-page {
+  /* タブレット・PC用 */
+}
+@media (min-width: 768px) {
+  .product-page .pan-title {
+    margin-top: 0.1rem;
+    font-size: 1.5rem;
+  }
+  .product-page .breadcrumb,
+  .product-page .pan-icon {
+    font-size: 1.5rem;
   }
 }
 .product-page {

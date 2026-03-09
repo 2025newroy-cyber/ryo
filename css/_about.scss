@@ -68,6 +68,66 @@
 		}
 	}
 
+	/* ===========================
+	    パンくずリスト
+	=========================== */
+	.breadcrumb {
+		padding: 1rem 0;
+		font-size: 3rem;
+		margin: 2rem 0 -2rem 2rem;
+
+		ul {
+			display: flex;
+			gap: 10px;
+			align-items: center;
+
+			li {
+				justify-content: center;
+				align-items: center;
+			}
+
+			li:last-child::after {
+				content: "";
+			}
+		}
+
+		a {
+			color: #f79119;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.pan-icon {
+		font-size: 3rem;
+		color: #808080;
+		margin: 0 -0.6rem;
+	}
+
+	.pan-title {
+		font-size: 3rem;
+		color: #666;
+		margin-top: 0.2rem;
+	}
+
+	/* タブレット・PC用 */
+	@media(min-width: 768px) {
+		.pan-title {
+			margin-top: 0.1rem;
+			font-size: 1.5rem;
+		}
+
+		.breadcrumb,
+		.pan-icon {
+			font-size: 1.5rem;
+		}
+	}
+
+
+
+
 	/*＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
 サブアバウト領域
 ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊*/
