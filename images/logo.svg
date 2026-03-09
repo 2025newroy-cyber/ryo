@@ -1,36 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="_レイヤー_4" data-name="レイヤー 4" xmlns="http://www.w3.org/2000/svg" width="91.48mm" height="91.48mm" viewBox="0 0 259.3 259.3">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-        stroke-linecap: round;
-        stroke-width: 12px;
-      }
-
-      .cls-1, .cls-2 {
-        stroke: #1f2a44;
-        stroke-linejoin: round;
-      }
-
-      .cls-3 {
-        font-family: InkFree, 'Ink Free';
-        font-size: 20px;
-      }
-
-      .cls-2 {
-        fill: #1d2943;
-      }
-    </style>
-  </defs>
-  <g>
-    <path class="cls-1" d="M78.22,30.63s-4.12,6.97-4.31,22.93c-.18,15.71,3.03,22.86,3.03,22.86"/>
-    <path class="cls-1" d="M132.37,17.11c9.83,14.91,14.89,34.91,17.33,65.97,2.16,27.51-1.95,59.64-32.82,71.6-33.16,12.85-101.81,15.18-104.27-10.1-2.21-22.7,47.35-36.04,75.1-41.01,66.06-11.82,150.54-5.66,159.72,23.84,7.85,25.24-28.65,58.52-100.24,69.42-18.31,2.79-60.81,4.59-78.46-2.18"/>
-    <path class="cls-1" d="M147.12,48.81c8.92-1.98,24.09-5.94,43.23-5.43,12.32.33,26.54,1.02,43.13,7.44"/>
-    <path class="cls-1" d="M116.88,154.68c-33.16,12.85-101.86,14.63-104.27-10.1s47.31-36.28,75.1-41.01"/>
-  </g>
-  <g>
-    <text class="cls-3" transform="translate(50.52 236.27)"><tspan x="0" y="0">RYO SUGIYAMA</tspan></text>
-    <polyline class="cls-2" points="40.72 243.32 225.05 243.32 208.81 233.78 208.75 243.32"/>
-  </g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1063 1063" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;">
+    <g id="ページ1" transform="matrix(4.166667,0,0,4.166667,0,0)">
+        <rect x="0" y="0" width="255.118" height="255.118" style="fill:none;"/>
+        <g id="レイヤー-1" serif:id="レイヤー 1">
+        </g>
+        <g id="logo">
+        </g>
+        <g id="レイヤー-4" serif:id="レイヤー 4">
+            <g transform="matrix(1,0,0,1,74.928249,96.694181)">
+                <path d="M0,-45.794C0,-45.794 -4.122,-38.826 -4.309,-22.861C-4.493,-7.147 -1.277,0 -1.277,0" style="fill:none;fill-rule:nonzero;stroke:rgb(31,42,68);stroke-width:12px;"/>
+            </g>
+            <g transform="matrix(1,0,0,1,129.081849,221.703781)">
+                <path d="M0,-184.323C9.828,-169.416 14.887,-149.409 17.326,-118.357C19.488,-90.847 15.379,-58.718 -15.496,-46.758C-48.66,-33.91 -117.302,-31.575 -119.764,-56.853C-121.976,-79.554 -72.413,-92.893 -44.663,-97.859C21.396,-109.681 105.878,-103.519 115.055,-74.019C122.907,-48.777 86.408,-15.497 14.82,-4.595C-3.493,-1.807 -45.986,0 -63.638,-6.777" style="fill:none;fill-rule:nonzero;stroke:rgb(31,42,68);stroke-width:12px;"/>
+            </g>
+            <g transform="matrix(1,0,0,1,143.833049,65.143981)">
+                <path d="M0,3.934C8.919,1.955 24.09,-2.01 43.232,-1.494C55.555,-1.162 69.775,-0.473 86.366,5.944" style="fill:none;fill-rule:nonzero;stroke:rgb(31,42,68);stroke-width:12px;"/>
+            </g>
+            <g transform="matrix(1,0,0,1,113.585549,138.472181)">
+                <path d="M0,36.474C-33.164,49.321 -101.86,51.102 -104.268,26.378C-106.691,1.505 -56.959,-9.903 -29.166,-14.628" style="fill:none;fill-rule:nonzero;stroke:rgb(31,42,68);stroke-width:12px;"/>
+            </g>
+        </g>
+    </g>
 </svg>
