@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+html * {
+	margin: 0;
+	padding: 0;
+}
+
+@media (max-sidth: 1000px) {}
+
+/* ここから基準 */
+body {
+	margin: 0 auto;
+	padding: 0 auto;
+	background-color: #f0eee9;
+	width: 1150px;
+	font-size: 16px;
+	font-family: "Noto Sans JP", "Meiryo UI", "メイリオ", sans-serif;
+}
+
+
+
+header {
+	display: flex;
+	position: relative;
+	justify-content: space-around;
+	align-items: center;
+	height: 100px;
+}
+
+
+.logomark {
+	width: 80px;
+	height: 81px;
+
+}
+
+
+/* .nav_border1 { */
+/* position: relative;
+	/* left: 1; */
+/* width: 1px;
+	height: 81px;
+	background-color: #a29782;
+	margin-left: 80px; */
+/* } */
+
+/* .nav_border2 {
+	width: 700px;
+	height: 1px;
+	background-color: #a29782;
+	margin: 70px 0 0 260px;
+	position: absolute;
+	z-index: 1;
+} */
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	/* align-items: center; */
+	height: 30px;
+	position: absolute;
+	top: 50px;
+	left: 500px;
+}
+
+nav ul li {
+	list-style-type: none;
+	float: left;
+	width: 100px;
+}
+
+nav ul li a {
+	color: black;
+	display: block;
+	line-height: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin: 0 5px;
+	transition: 0.9s;
+}
+
+nav a:hover {
+	color: #ffffff;
+	background-color: #585248;
+	border-radius: 5px;
+	opacity: 0.5;
+}
+
+
+footer {
+	color: #585248;
+	clear: both;
+	border-top: solid thin #585248;
+	padding: 20px 0;
+}
+
+.footer-rj {
+	display: flex;
+}
+
+
+.footer-rogo {
+	margin-left: 200px;
+	padding-top: 20px;
+}
+
+.footer-jyusho {
+	clear: both;
+	margin: 10px 0 0 130px;
+	text-align: center;
+}
+
+.footer-copy {
+	text-align: center;
+}
+
+.hello {
+	clear: both;
+	color: #585248;
+	font-size: 100px;
+	text-align: center;
+	border-top: solid thin #585248;
+	letter-spacing: 10pt;
+}
+
+/* ここまで基準 */
+/* ここからホーム */
+#topphoto {
+	clear: both;
+	background-image: url("../images/top.jpg");
+	width: 1150px;
+	height: 500px;
+	margin: 0 auto;
+}
+
+#topphoto p {
+	font-size: 70px;
+	color: white;
+	width: 700px;
+	height: 300px;
+	padding: 60px 50px 0 70px;
+	opacity: 0.7;
+}
+
+#topphoto p .karada {
+	font-size: 120px;
+	color: rgb(237, 241, 226);
+}
+
+h2 {
+	font-size: 30px;
+	color: #585248;
+	text-align: center;
+	margin: 50px auto;
+	border-bottom: solid thin #585248;
+	padding-bottom: 10px;
+	width: 500px;
+	letter-spacing: 5pt;
+}
+
+
+section {
+	position: relative;
+	z-index: 2;
+	padding-right: 25px;
+	margin-bottom: 50px;
+	float: right;
+}
+
+section h3 {
+	border-top: solid thin #585248;
+	border-bottom: solid thin #585248;
+	font-size: 30px;
+	padding: 5px 0 5px 50px;
+	color: #383734;
+	background-color: #ffffff;
+	opacity: 0.8;
+	width: 480px;
+	position: absolute;
+	z-index: 1;
+	top: 50px;
+}
+
+.shop,
+.product,
+.service,
+.topics {
+	background-color: #ffffff;
+	width: 300px;
+	position: absolute;
+	padding: 10px;
+	text-align: center;
+	opacity: 0.8;
+	z-index: 1;
+	top: 135px;
+	left: 100px;
+}
+
+/* ここまでホーム */
+/* ここからサービス */
+
+.main-service p {
+	float: left;
+	margin: 0 0 40px 100px;
+}
+
+.main-service section {
+	margin-top: 50px;
+}
+
+.main-service section h4 {
+	font-size: 20px;
+	color: #585248;
+}
+
+.main-service section p {
+	font-size: 16px;
+	color: #585248;
+}
+
+.section-service {
+	margin-right: 50px;
+}
+
+/* ここまでサービス */
