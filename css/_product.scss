@@ -1,0 +1,414 @@
+@charset "utf-8";
+
+.product-page {
+
+	/*＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+サブプロダクトヒーローイメージ
+＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊*/
+	.product-hero {
+		background-image: url("../images/product-sub02.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-attachment: scroll;
+		height: 40vh;
+		position: relative;
+		opacity: 0.9;
+		display: block;
+
+		// /* タブレット・PC用 */
+		// @media (min-width: 768px) {
+		// 	background-image: url("../images/ph10.jpg");
+		// }
+
+		&::after {
+			display: block;
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 40vh;
+			border-bottom: 1.5px dotted #fff;
+			z-index: 100;
+
+		}
+
+		.product-hero-container {
+			// display: flex;
+			// flex-direction: column;
+			// justify-content: center;
+			// align-items: center;
+			// display: block;
+			// position: relative;
+			// height: 40vh;
+			// position: absolute;
+			// top: 80px;
+			// left: 20px;
+			// top: 10vh;
+			// right: 3vw;
+
+			h1 {
+				font-family: "Montserrat",
+					"M PLUS Rounded 1c",
+					sans-serif;
+				// font-size: 4rem;
+				font-size: clamp(1.7rem, 4vw, 5rem);
+				font-weight: 600;
+				color: #ffffffaf;
+				line-height: 5rem;
+				margin-bottom: 2vh;
+				position: absolute;
+				top: 10vh;
+				right: 3vw;
+			}
+
+			p {
+				font-family: "Montserrat",
+					"M PLUS Rounded 1c",
+					sans-serif;
+				font-weight: 600;
+				color: #ffffffaf;
+				// font-size: 2.5rem;
+				font-size: clamp(1.2rem, 2.2vw, 2.5rem);
+				letter-spacing: 1.5pt;
+				// margin-top: 1vh;
+				line-height: 3vh;
+				position: absolute;
+				top: 28vh;
+				right: 5vw;
+			}
+
+			/* タブレット・PC用 */
+			@media (min-width: 768px) {
+				h1 {
+					font-size: clamp(2rem, 3vw, 3.5rem);
+					line-height: 3.5rem;
+					margin-bottom: 2vh;
+				}
+
+				p {
+					font-size: clamp(1.2rem, 1.5vw, 1.7rem);
+				}
+			}
+		}
+	}
+
+	/*＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+サブプロダクト領域
+＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊*/
+
+	.product {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: #646363;
+		font-family: "M PLUS Rounded 1c";
+		position: relative;
+		// margin-top: 1rem;
+
+
+		// &::before {
+		// 	display: block;
+		// 	content: "";
+		// 	left: 0;
+		// 	right: 0;
+		// 	border-bottom: 1px dotted #646363;
+		// 	width: 50rem;
+		// }
+
+
+		.product-container {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-around;
+			gap: 1rem;
+			width: 90%;
+			margin: 1.5rem 3rem 2.5rem 3rem;
+
+			&:not(:last-of-type) {
+				border-bottom: 2px dotted #b5b5b5a8;
+				margin-bottom: 1rem;
+				padding-bottom: 1rem;
+
+				/* タブレット・PC用 */
+				@media (min-width: 768px) {
+					padding-bottom: 3rem;
+				}
+			}
+
+			.product-02-content,
+			.product-01-content {
+				display: flex;
+				// align-items: stretch;  //pc
+				flex-direction: column;
+				align-items: center;
+				width: 100%;
+				gap: 2rem;
+				margin-bottom: 0;
+
+				.product-02-title {
+					order: 1;
+				}
+
+				.product-02-text {
+					order: 2;
+				}
+
+				.product-02-photo {
+					order: 3;
+				}
+
+				.product-02-comment {
+					order: 4;
+				}
+
+				/* タブレット・PC用 */
+				@media (min-width: 768px) {
+					display: flex;
+					align-items: stretch;
+					width: 100%;
+					gap: 1rem;
+					flex-direction: row;
+
+				}
+
+				.product-02-title,
+				.product-01-title {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					// width: 14%;  //pc
+					width: 90%;
+					margin: 6rem 0 5rem 0;
+					// margin-top: 6rem;  //pc
+
+					/* タブレット・PC用 */
+					@media (min-width: 768px) {
+						width: 14%;
+						margin-top: 4rem;
+					}
+
+					// /* PC用*/
+					// @media (min-width: 1024px) {
+					// 	width: 14%;
+					// 	margin-top: 4rem;
+					// }
+
+					h2 {
+						// font-size: 1.7rem;  pc
+						// margin-bottom: 0.6rem;  pc
+						font-size: 7rem;
+						margin-bottom: 1.7rem;
+
+						/* タブレット・PC用 */
+						@media (min-width: 768px) {
+							font-size: 1.7rem;
+							margin-bottom: 0.6rem;
+						}
+					}
+
+					p {
+						// font-size: 1.5rem;  pc
+						font-size: 4rem;
+
+						/* タブレット・PC用 */
+						@media (min-width: 768px) {
+							font-size: 1.5rem;
+						}
+
+						&::before {
+							display: block;
+							content: "";
+							border-top: 1.5px dotted #b5b5b5a8;
+						}
+					}
+				}
+
+				.product-02-text,
+				.product-01-text {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					// width: 28%;  pc
+					width: 70%;
+					padding: 1rem;
+
+					/* タブレット・PC用 */
+					@media (min-width: 768px) {
+						width: 29%;
+					}
+
+					h3 {
+						// font-size: 1.5rem;  pc
+						font-size: 5rem;
+						margin-bottom: 2rem;
+
+						/* タブレット・PC用 */
+						@media (min-width: 768px) {
+							font-size: 1.5rem;
+						}
+					}
+
+					p {
+						// font-size: 1.2rem;  pc
+						font-size: 3rem;
+
+						/* タブレット・PC用 */
+						@media (min-width: 768px) {
+							font-size: 1.2rem;
+						}
+					}
+				}
+
+				// .product-02-photo,
+				.product-01-photo {
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					align-items: center;
+					gap: 4rem;
+					// gap: 2rem;  pc
+					// width: 29%;  pc
+					width: 100%;
+
+					/* タブレット・PC用 */
+					@media (min-width: 768px) {
+						gap: 2rem;
+						width: 29%;
+					}
+
+					img {
+						width: 75%;
+						max-width: 200%;
+						height: auto;
+						object-fit: cover;
+						// aspect-ratio: 16 / 9;
+						border-radius: 1rem;
+						box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+						// opacity: 0.9;
+
+						/* タブレット・PC用 */
+						@media (min-width: 768px) {
+							width: 95%;
+						}
+					}
+				}
+
+
+				.product-02-photo {
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					align-items: center;
+					gap: 4rem;
+					width: 100%;
+
+					a {
+						width: 75%;
+						display: block;
+						transition: transform 0.3s;
+
+						&:hover {
+							transform: scale(1.02);
+						}
+					}
+
+					img {
+						width: 100%;
+						height: auto;
+						object-fit: cover;
+						border-radius: 1rem;
+						box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+					}
+
+					/* タブレット・PC用 */
+					@media (min-width: 768px) {
+						order: 1;
+						width: 60%;
+						flex-direction: row;
+						gap: 8rem;
+
+						a {
+							width: 48%;
+						}
+					}
+				}
+
+				.product-02-comment,
+				.product-01-comment {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					width: 80%;
+					// list-style-position: inside;
+					// width: 28%;  pc
+
+					border: dotted 2px #b5b5b5;
+					// padding: 1rem 1.7rem;  pc
+					padding: 2rem;
+					background-color: #ffffffa4;
+					border-radius: 8px;
+					margin-top: 2rem;
+
+					/* タブレット・PC用 */
+					@media (min-width: 768px) {
+						width: 28%;
+						// padding: 0.5rem 0.8rem;
+					}
+
+					h3 {
+						// font-size: 1.5rem;  pc
+						font-size: 4rem;
+						margin-top: 0;
+						margin-bottom: 1rem;
+						width: 100%; //pcではこれと↓
+						// text-align: center;  //pc リストのdisc分ズレる。これは先生が言ってた。とりあえず今回はこれ。
+
+						/* タブレット・PC用 */
+						@media (min-width: 768px) {
+							font-size: 1.5rem;
+							text-align: center;
+							margin-bottom: 0.2rem;
+						}
+					}
+
+					dl {
+
+						dt {
+							font-size: 3rem;
+							padding-bottom: 1vh;
+
+							/* タブレット・PC用 */
+							@media (min-width: 768px) {
+								font-size: 1rem;
+							}
+						}
+
+						dd {
+							font-size: 2.5rem;
+							line-height: 4rem;
+
+							/* タブレット・PC用 */
+							@media (min-width: 768px) {
+								font-size: 1rem;
+								line-height: 1.2rem;
+							}
+
+						}
+
+					}
+
+				}
+
+				/* タブレット・PC用 */
+				@media (min-width: 768px) {
+					.product-02-comment {
+						margin-left: 8rem;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,407 @@
+@charset "utf-8";
+
+.about-page {
+
+	/*＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+サブアバウトヒーローイメージ
+＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊*/
+	.about-hero {
+		background-image: url("../images/about-sub.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-attachment: scroll;
+		height: 40vh;
+		position: relative;
+		opacity: 0.7;
+		display: block;
+		position: relative;
+		height: 40vh;
+
+		&::after {
+			display: block;
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 40vh;
+			border-bottom: 1.5px dotted #fff;
+			z-index: 100;
+		}
+
+		.about-hero-container {
+			// display: flex;
+			// flex-direction: column;
+			// justify-content: center;
+			// align-items: center;
+			// display: block;
+			// position: relative;
+			// height: 40vh;
+			position: absolute;
+			// top: 80px;
+			// left: 20px;
+			top: 15vh;
+			left: 2vw;
+
+			h1 {
+				font-family: "Montserrat",
+					"M PLUS Rounded 1c",
+					sans-serif;
+				// font-size: 4rem;
+				font-size: clamp(1.7rem, 2.2vw, 2.5rem);
+				font-weight: 600;
+				color: #2c3e55a8;
+			}
+
+			p {
+				font-family: "Montserrat",
+					"M PLUS Rounded 1c",
+					sans-serif;
+				font-weight: 600;
+				color: #ffffffaf;
+				// font-size: 2.5rem;
+				font-size: clamp(1.2rem, 1.5vw, 1.7rem);
+				letter-spacing: 1.5pt;
+				margin-top: 1vh;
+				line-height: 1.7rem;
+			}
+		}
+	}
+
+	/*＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊
+サブアバウト領域
+＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊*/
+
+	.about {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: #646363;
+		font-family: "M PLUS Rounded 1c";
+		position: relative;
+		margin-top: 1rem;
+
+
+		// &::before {
+		// 	display: block;
+		// 	content: "";
+		// 	left: 0;
+		// 	right: 0;
+		// 	border-bottom: 1px dotted #646363;
+		// 	width: 50rem;
+		// }
+
+
+		//ここから、ひととなり
+		.about-container {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-around;
+			gap: 1rem;
+			width: 90%;
+			margin: 1.5rem 3rem 2.5rem 3rem;
+
+			&:not(:last-of-type) {
+				border-bottom: 2px dotted #b5b5b5a8;
+				margin-bottom: 1rem;
+				padding-bottom: 1rem;
+
+				/* タブレット・PC用 */
+				@media (min-width: 768px) {
+					padding-bottom: 2rem;
+				}
+			}
+
+			.about-02-content,
+			.about-01-content {
+				display: flex;
+				// align-items: stretch;  //pc
+				flex-direction: column;
+				align-items: center;
+				width: 100%;
+				gap: 2rem;
+
+
+
+				.about-02-title {
+					order: 1;
+				}
+
+				.about-02-text {
+					order: 2;
+				}
+
+				.about-02-photo {
+					order: 3;
+				}
+
+				.about-02-comment {
+					order: 4;
+				}
+
+				/* タブレット・PC用 */
+				@media (min-width: 768px) {
+					display: flex;
+					align-items: stretch;
+					width: 100%;
+					gap: 1rem;
+					flex-direction: row;
+
+					.about-02-title {
+						order: 4;
+					}
+
+					.about-02-text {
+						order: 3;
+					}
+
+					.about-02-photo {
+						order: 2;
+					}
+
+					.about-02-comment {
+						order: 1;
+					}
+
+				}
+
+				.about-02-title,
+				.about-01-title {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					// width: 14%;  //pc
+					width: 90%;
+					margin: 6rem 0 5rem 0;
+					// margin-top: 6rem;  //pc
+
+					/* タブレット・PC用 */
+					@media (min-width: 768px) {
+						width: 14%;
+						margin-top: 4rem;
+					}
+
+					// /* PC用*/
+					// @media (min-width: 1024px) {
+					// 	width: 14%;
+					// 	margin-top: 4rem;
+					// }
+
+					h2 {
+						// font-size: 1.7rem;  pc
+						// margin-bottom: 0.6rem;  pc
+						font-size: 7rem;
+						margin-bottom: 1.7rem;
+
+						/* タブレット・PC用 */
+						@media (min-width: 768px) {
+							font-size: 1.7rem;
+							margin-bottom: 0.6rem;
+						}
+
+						// /* PC用*/
+						// @media (min-width: 1024px) {
+						// 	font-size: 1.7rem;
+						// 	margin-bottom: 0.6rem;
+						// }
+					}
+
+					p {
+						// font-size: 1.5rem;  pc
+						font-size: 4rem;
+
+						/* タブレット・PC用 */
+						@media (min-width: 768px) {
+							font-size: 1.5rem;
+						}
+
+						// /* PC用*/
+						// @media (min-width: 1024px) {
+						// 	font-size: 1.5rem;
+						// }
+
+						&::before {
+							display: block;
+							content: "";
+							border-top: 1.5px dotted #b5b5b5a8;
+						}
+					}
+				}
+
+				.about-02-text,
+				.about-01-text {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					// width: 28%;  pc
+					width: 70%;
+					padding: 1rem;
+
+					/* タブレット・PC用 */
+					@media (min-width: 768px) {
+						width: 29%;
+					}
+
+					// /* PC用*/
+					// @media (min-width: 1024px) {
+					// 	width: 29%;
+					// }
+
+					h3 {
+						// font-size: 1.5rem;  pc
+						font-size: 5rem;
+						margin-bottom: 2rem;
+
+						/* タブレット・PC用 */
+						@media (min-width: 768px) {
+							font-size: 1.5rem;
+						}
+
+						// /* PC用*/
+						// @media (min-width: 1024px) {
+						// 	font-size: 1.5rem;
+						// }
+					}
+
+					p {
+						// font-size: 1.2rem;  pc
+						font-size: 3rem;
+
+						/* タブレット・PC用 */
+						@media (min-width: 768px) {
+							font-size: 1.2rem;
+						}
+
+						// /* PC用*/
+						// @media (min-width: 1024px) {
+						// 	font-size: 1.2rem;
+						// }
+					}
+				}
+
+				.about-02-photo,
+				.about-01-photo {
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					align-items: center;
+					gap: 4rem;
+					// gap: 2rem;  pc
+					// width: 29%;  pc
+					width: 100%;
+
+					/* タブレット・PC用 */
+					@media (min-width: 768px) {
+						gap: 2rem;
+						width: 29%;
+					}
+
+					// /* PC用*/
+					// @media (min-width: 1024px) {
+					// 	gap: 2rem;
+					// 	width: 29%;
+					// }
+
+					img {
+						width: 75%;
+						max-width: 200%;
+						height: auto;
+						object-fit: cover;
+						// aspect-ratio: 16 / 9;
+						border-radius: 1rem;
+						box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+						// opacity: 0.9;
+
+						/* タブレット・PC用 */
+						@media (min-width: 768px) {
+							width: 95%;
+						}
+					}
+				}
+
+				.about-02-comment,
+				.about-01-comment {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					width: 70%;
+					list-style-position: inside;
+					// width: 28%;  pc
+
+					border: dotted 2px #b5b5b5;
+					// padding: 1rem 1.7rem;  pc
+					padding: 2rem 2rem 2rem 5rem;
+					background-color: #ffffffa4;
+					border-radius: 15px;
+					margin: 2rem 0;
+
+					/* タブレット・PC用 */
+					@media (min-width: 768px) {
+						width: 28%;
+						padding: 1rem 1.7rem;
+					}
+
+					// /* PC用*/
+					// @media (min-width: 1024px) {
+					// 	width: 28%;
+					// 	padding: 1rem 1.7rem;
+					// }
+
+					h3 {
+						// font-size: 1.5rem;  pc
+						font-size: 5rem;
+						margin-bottom: 2rem;
+						width: 100%; //pcではこれと↓
+						// text-align: center;  //pc リストのdisc分ズレる。これは先生が言ってた。とりあえず今回はこれ。
+
+						/* タブレット・PC用 */
+						@media (min-width: 768px) {
+							font-size: 1.5rem;
+							text-align: center;
+						}
+
+						// /* PC用*/
+						// @media (min-width: 1024px) {
+						// 	font-size: 1.5rem;
+						// 	text-align: center;
+						// }
+					}
+
+					ul {
+						margin-left: 1rem;
+						line-height: 5rem;
+						// line-height: 2rem;
+
+						/* タブレット・PC用 */
+						@media (min-width: 768px) {
+							line-height: 2rem;
+						}
+
+						// /* PC用*/
+						// @media (min-width: 1024px) {
+						// 	line-height: 2rem;
+						// }
+
+						li {
+							// font-size: 1.2rem;  pc
+							font-size: 3rem;
+							list-style: disc;
+
+							/* タブレット・PC用 */
+							@media (min-width: 768px) {
+								font-size: 1.2rem;
+							}
+
+							/* PC用*/
+							@media (min-width: 1024px) {
+								font-size: 1.2rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
