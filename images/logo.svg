@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_4" data-name="レイヤー 4" xmlns="http://www.w3.org/2000/svg" width="91.48mm" height="91.48mm" viewBox="0 0 259.3 259.3">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-width: 12px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #1f2a44;
+        stroke-linejoin: round;
+      }
+
+      .cls-3 {
+        font-family: InkFree, 'Ink Free';
+        font-size: 20px;
+      }
+
+      .cls-2 {
+        fill: #1d2943;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-1" d="M78.22,30.63s-4.12,6.97-4.31,22.93c-.18,15.71,3.03,22.86,3.03,22.86"/>
+    <path class="cls-1" d="M132.37,17.11c9.83,14.91,14.89,34.91,17.33,65.97,2.16,27.51-1.95,59.64-32.82,71.6-33.16,12.85-101.81,15.18-104.27-10.1-2.21-22.7,47.35-36.04,75.1-41.01,66.06-11.82,150.54-5.66,159.72,23.84,7.85,25.24-28.65,58.52-100.24,69.42-18.31,2.79-60.81,4.59-78.46-2.18"/>
+    <path class="cls-1" d="M147.12,48.81c8.92-1.98,24.09-5.94,43.23-5.43,12.32.33,26.54,1.02,43.13,7.44"/>
+    <path class="cls-1" d="M116.88,154.68c-33.16,12.85-101.86,14.63-104.27-10.1s47.31-36.28,75.1-41.01"/>
+  </g>
+  <g>
+    <text class="cls-3" transform="translate(50.52 236.27)"><tspan x="0" y="0">RYO SUGIYAMA</tspan></text>
+    <polyline class="cls-2" points="40.72 243.32 225.05 243.32 208.81 233.78 208.75 243.32"/>
+  </g>
+</svg>
