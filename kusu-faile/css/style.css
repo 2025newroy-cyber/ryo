@@ -1547,6 +1547,12 @@ navがスマホ用の場合はシャーンって動くようにする
   color: #fffdf5;
   font-family: "Noto Sans JP", sans-serif;
 }
+.about .about-container {
+  background-image: url("../images/about/about-top.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .about .about-left,
 .about .about-right {
   font-size: 1rem;

@@ -498,11 +498,13 @@ navがスマホ用の場合はシャーンって動くようにする
 		font-family: "Noto Sans JP", sans-serif;
 	}
 
-	// .about-container {
-	// background-image: url("../images/about/about-top.jpg");
-	// background-repeat: no-repeat;
-	// background-position: center;
-	// background-size: cover;
+	.about-container {
+		background-image: url("../images/about/about-top.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
 	// position: relative;
 	// // width: 90vw;
 	// width: 100%;
